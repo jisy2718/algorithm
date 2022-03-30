@@ -6,7 +6,6 @@ for tc in range(1,T+1):
     T = [list(map(int,input().split())) for _ in range(N)]
 
     cur_min_end = 0
-    next_start = 24
     next_min_end = 24
 
     result = 0
@@ -19,11 +18,11 @@ for tc in range(1,T+1):
                 flag = True
 
         else: # 더이상 작업 불가
-            if flag ==False:
+            if flag == False:
                 break
 
 
-        if flag==True:
+        if flag == True:
             result += 1
             cur_min_end = next_min_end
             next_min_end = 24

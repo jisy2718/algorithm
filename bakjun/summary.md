@@ -87,6 +87,16 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
+# 우선순위 큐
+
+| 번호                                                         | 설명                         | 해결방법 | 제출번호                                                  |
+| ------------------------------------------------------------ | ---------------------------- | -------- | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" /> **[11279번](https://www.acmicpc.net/problem/11279)** | 최대힙의 insert, delete 구현 | 구현     | [41228627](https://www.acmicpc.net/submit/11279/41228627) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" /> [1927번](https://www.acmicpc.net/problem/1927) | 최소힙의 insert, delete 구현 | 구현     | [41228910](https://www.acmicpc.net/submit/1927/41228910)  |
+|                                                              |                              |          |                                                           |
+
+
+
 # BFS&DFS
 
 + 최단 경로 / 최저비용에는 BFS 구현
@@ -123,8 +133,9 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />[1991번 ](https://www.acmicpc.net/problem/1991) | 트리의 pre,in,post order 순회               |                                                              | [40884311](https://www.acmicpc.net/submit/1991/40884311)     |
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" /> [1167번](https://www.acmicpc.net/problem/1167) | 트리지름구하기                              | dfs 재귀구현                                                 | [40954377](https://www.acmicpc.net/submit/1167/40954377) 메모리초과 |
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" /> [1967번](https://www.acmicpc.net/problem/1967) | 트리 지름 구하기                            | dfs 재귀구현<br />후위탐색 재귀구현<br />후위탐색 재귀구현<br />sys.setrecursionlimit(10**9) | [41039735](https://www.acmicpc.net/submit/1967/41039735) 시간초과<br />[41041676](https://www.acmicpc.net/submit/1967/41041676) 재귀초과<br />[41042182](https://www.acmicpc.net/submit/1967/41042182) 재귀초과(위의 것 post인자 1개로 한 것)<br />[41043495](https://www.acmicpc.net/submit/1967/41043495) value error |
-| ***<img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" alt="img" style="width:20px;" />[2263번](https://www.acmicpc.net/problem/2263)*** | 이진트리 중,후위순회로 전위순회 찾기        | sys.setrecursionlimit(10**9)<br />in_order에서 특정 값의 index 가져오기 위해, list 하나 만들고 시작하기(left,right만들어서 함)<br />left, right  안만들고, 바로 index로 계산 | [41045481][https://www.acmicpc.net/submit/2263/41045481] 시간초과<br />**[41101636](https://www.acmicpc.net/submit/2263/41101636)**<br />[41101739](https://www.acmicpc.net/submit/2263/41101739) |
+| ***<img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" alt="img" style="width:20px;" />[2263번](https://www.acmicpc.net/problem/2263)*** | 이진트리 중,후위순회로 전위순회 찾기        | sys.setrecursionlimit(10**9)<br />in_order에서 특정 값의 index 가져오기 위해, list 하나 만들고 시작하기(left,right만들어서 함)<br />left, right  안만들고, 바로 index로 계산(41101739) | [41045481][https://www.acmicpc.net/submit/2263/41045481] 시간초과<br />[41101636](https://www.acmicpc.net/submit/2263/41101636)<br />[41101739](https://www.acmicpc.net/submit/2263/41101739)<br />[41233770](https://www.acmicpc.net/submit/2263/41233770) : 이거보기 |
 | *** <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />[5639번](https://www.acmicpc.net/problem/5639)*** | 이진검색트리에서 전위순회를 후위순회로 변환 | 이진검색트리는 좌측노드의 값이 우측노드의 값보다 작으므로,  전위순회의 첫 원소가 root, root 보다 작은 첫 값이 왼쪽 노드, root보다 큰 첫 값이 오른쪽 노드 | [41122756](https://www.acmicpc.net/submit/5639/41122756)     |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" /> **[4803번](https://www.acmicpc.net/problem/4803)** | 그래프에서 트리 개수 찾기                   | visited를 잘 하는 것이 핵심                                  |                                                              |
 
 
 

@@ -67,11 +67,11 @@
 
 # 완전탐색
 
-| 문제번호                                                     | 내용                                                         | 참고사항                 |      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------ | ---- |
-| **[5188](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxOQHk6RM4DFASZ&probBoxId=AX_TwYkqORYDFARi+&type=USER&problemBoxTitle=220329_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 최소합 | NxN 배열의 (0,0) 에서 (N-1,N-1)까지  arr[r]\[c] 합을 최소로하도록 이동 |                          |      |
-| **[5189](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AXxOQwSKRPkDFASZ&solveclubId=AX7cgLH6Z7QDFAS2&problemBoxTitle=220329_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5&probBoxId=AX_TwYkqORYDFARi+)** 전자카트 | 순열 만들기                                                  | 순열 만드는 것 다시 보기 |      |
-|                                                              |                                                              |                          |      |
+| 문제번호                                                     | 내용                                                         | 참고사항                                                     |      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| **[5188](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxOQHk6RM4DFASZ&probBoxId=AX_TwYkqORYDFARi+&type=USER&problemBoxTitle=220329_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 최소합 | NxN 배열의 (0,0) 에서 (N-1,N-1)까지  arr[r]\[c] 합을 최소로하도록 이동 |                                                              |      |
+| **[5189](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AXxOQwSKRPkDFASZ&solveclubId=AX7cgLH6Z7QDFAS2&problemBoxTitle=220329_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5&probBoxId=AX_TwYkqORYDFARi+)** 전자카트 | 순열 만들기                                                  | 순열 만드는 것 다시 보기<br />백트래킹 쓸 수 있도록, 이동 순간마다 이동 비용 계산하는 것이 훨씬 좋음 |      |
+|                                                              |                                                              |                                                              |      |
 
 
 
@@ -90,9 +90,9 @@
 + **대각선 표시** 
   + 정사각 배열에서 대각선은 2N-1개 존재
   
-  + 한쪽 대각선 (/ 방향) 의 인덱스 합은 0,1,2,3,...,2N-2
+  + 한쪽 대각선 (////방향) 의 인덱스 합은 0,1,2,3,...,2N-2
   
-  + 다른 한쪽의 경우 (\ 방향) 의 경우 인덱스의 차는 -(N-1) , - (N-2) , ... , 0 , ... , (N-2), (N-1)
+  + 다른 한쪽의 경우 (\\\\\\\\ 방향) 의 경우 인덱스의 차는 -(N-1) , - (N-2) , ... , 0 , ... , (N-2), (N-1)
     + i - j + (N-1) 하면 0, 1, 2, ... , 2N-1
     
       
@@ -100,3 +100,8 @@
 + 진수표현
 
   + list에 숫자로 넣어서 하면 편함
+
+
+
++ 최소값 찾을 때, 찾는 도중에 찾은 값이 최소보다 크면, **백트래킹** 활용!
++ 
