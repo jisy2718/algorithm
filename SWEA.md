@@ -85,6 +85,26 @@
 
 
 
+
+
+# 분할정복(03/31)
+
+| 문제번호                                                     | 내용                                                         | 참고사항                             |      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------ | ---- |
+| **[5205](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxY9RJqZasDFASZ&probBoxId=AX_eEqMax0wDFARi+&type=USER&problemBoxTitle=220331_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 퀵정렬 | 퀵정렬                                                       | 다시 해보기                          |      |
+| **[5207](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxY9pjaZeUDFASZ&probBoxId=AX_eEqMax0wDFARi+&type=USER&problemBoxTitle=220331_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 이진탐색 |                                                              | 다시 해보기                          |      |
+| **[5208](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxY99SaZhoDFASZ&probBoxId=AX_eEqMax0wDFARi+&type=USER&problemBoxTitle=220331_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 전기버스2 | 충전소를 최소한으로 지나면서, 목적지에 도착하기              | 백트래킹 잘해주기                    |      |
+| [5209](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXxY-RpqZkoDFASZ&probBoxId=AX_eEqMax0wDFARi+&type=USER&problemBoxTitle=220331_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5) 최소생산비용 | 2차원 배열의 한 행에 한 개씩 선택해서, 합 최소되도록 하는 것 | 백트래킹 잘하면 됨                   |      |
+| [1865](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AV5LuHfqDz8DFAXc&probBoxId=AX_eEqMax0wDFARi+&type=PROBLEM&problemBoxTitle=220331_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5) 최대확률값 | 2차원 배열의 한 행에 한 개씩 선택해서, 곱이 최대가 되도록 하는 것 | 백트래킹 잘하면 됨. 5209와 같은 문제 |      |
+
+
+
+
+
+
+
+
+
 # 일반사항
 
 + **대각선 표시** 
@@ -104,4 +124,5 @@
 
 
 + 최소값 찾을 때, 찾는 도중에 찾은 값이 최소보다 크면, **백트래킹** 활용!
-+ 
++ 소수점 아래자리 표현
+  + `print(f'{number: .8f}')`  : number의 소수점 8자리까지 표현
