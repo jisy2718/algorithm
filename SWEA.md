@@ -101,6 +101,18 @@
 
 
 
+# Problem Solving 4(220404)
+
+| 문제번호                                                     | 내용                                     | 참고사항                                                     |      |
+| ------------------------------------------------------------ | ---------------------------------------- | ------------------------------------------------------------ | ---- |
+| **[1249 ](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AV15QRX6APsCFAYD&probBoxId=AX_ULMNaTCYDFARi&type=PROBLEM&problemBoxTitle=220404_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)보급로** | 중복방문 BFS<br />다익스트라로 풀어도 됨 | 중복 방문이 가능할 조건을 이전 결과보다 더 나은 결과일 때로<br />2차원 visited 배열에, 현재까지 비용을 입력 |      |
+| **[5251](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXx9IM3aaF0DFARs&probBoxId=AX_ULMNaTCYDFARi&type=USER&problemBoxTitle=220404_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5) 최소이동거리** | 다익스트라                               | 좀 더 깔끔하게 해보기                                        |      |
+| [2806](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AV7GKs06AU0DFAXB&probBoxId=AX_ULMNaTCYDFARi&type=PROBLEM&problemBoxTitle=220404_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5) Nqueen |                                          | 대각선의 합 규칙 알기 / used이용해서 순열만드는 것과 같은 테크닉 이용 |      |
+| **[2115](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AV5V4A46AdIDFAWu&probBoxId=AX_ULMNaTCYDFARi&type=PROBLEM&problemBoxTitle=220404_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)**벌꿀 채취 |                                          | **주의** : 연속된 M개의 벌꿀 통들 중에서, 조건에 맞게 몇 개의 벌꿀 통들을 선택하면 되는 문제 / dfs |      |
+| **[5648](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AWXRFInKex8DFAUo&probBoxId=AX_ULMNaTCYDFARi&type=PROBLEM&problemBoxTitle=220404_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=5)** 원자소멸 시뮬레이션 |                                          | x,y 좌표축에서 움직이는 것과, 행렬좌표에서 움직이는 것의 차이 꼭!!! 알기<br />x,y좌표계는 위로가면 + 이지만, 행렬은 - |      |
+
+
+
 
 
 
@@ -108,6 +120,7 @@
 # 일반사항
 
 + **대각선 표시** 
+  
   + 정사각 배열에서 대각선은 2N-1개 존재
   
   + 한쪽 대각선 (////방향) 의 인덱스 합은 0,1,2,3,...,2N-2
@@ -126,3 +139,4 @@
 + 최소값 찾을 때, 찾는 도중에 찾은 값이 최소보다 크면, **백트래킹** 활용!
 + 소수점 아래자리 표현
   + `print(f'{number: .8f}')`  : number의 소수점 8자리까지 표현
++ for loop 뒤에서부터 순회하면, 삭제해도 index에 영향을 안미침
