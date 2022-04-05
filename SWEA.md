@@ -113,6 +113,15 @@
 
 
 
+# 그래프 (04/05)
+
+| 문제번호                                                     | 내용                                                         | 참고사항                                                     |      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| **[5248](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXx9HPqaZ-QDFARs&probBoxId=AX_4CQ86bMwDFARi&type=USER&problemBoxTitle=220405_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=7)** 그룹나누기 | 서로소 집합 find_set, union 이용해서 해보기                  |                                                              |      |
+| **[5249](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXx9Hh8qaAkDFARs&probBoxId=AX_4CQ86bMwDFARi&type=USER&problemBoxTitle=220405_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=7)** MST | prim 이용해 mst 구현                                         |                                                              |      |
+| **[5250](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXx9H38qaDUDFARs&probBoxId=AX_4CQ86bMwDFARi&type=USER&problemBoxTitle=220405_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=7)**  최소비용 | Dijkstra 이용(2차원배열) -> 시간초과<br />중복방문BST의 경우 OK | Dijkstra의 경우dr ,dc로 이동 시, arr\[cr][cc] == arr\[nr][nc] 인 경우에, 계속 이동하면 최소거리가 됨.<br />이를 이용해 보기 |      |
+| **[5251](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AX7cgLH6Z7QDFAS2&contestProbId=AXx9IM3aaF0DFARs&probBoxId=AX_4CQ86bMwDFARi&type=USER&problemBoxTitle=220405_%EC%8B%A4%EC%8A%B5%EB%B0%8F%EA%B3%BC%EC%A0%9C&problemBoxCnt=7)** 최소이동거리 | Dijkstra 이용(1차원배열)                                     | pycharm 파일 보면 잘 설명되어 있다.                          |      |
+
 
 
 
