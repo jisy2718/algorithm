@@ -1,4 +1,8 @@
-# sorting
+[toc]
+
+
+
+# 01 회차 - sorting
 
 | 번호      | 설명                                                | 해결방법                                                     | 제출번호                                                     | 참고                                                   |
 | --------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ |
@@ -18,7 +22,7 @@
 
 
 
-# 문자열
+# 02 회차 - 문자열
 
 | 번호                                             | 설명                                           | 해결방법                                                     | 제출번호                                                     | 참고 |
 | ------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
@@ -44,7 +48,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-# *브루트 포스* 다시 풀기
+# 03 회차 - *브루트 포스* 다시 풀기
 
 | 번호                                           | 설명   | 해결방법             | 제출번호                                                     |
 | ---------------------------------------------- | ------ | -------------------- | ------------------------------------------------------------ |
@@ -58,7 +62,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-# *Stack* 마저 풀기
+# 04 회차 - *Stack* 마저 풀기
 
 | 번호                                             | 설명                                  | 해결방법                      | 제출번호                                                  |
 | ------------------------------------------------ | ------------------------------------- | ----------------------------- | --------------------------------------------------------- |
@@ -73,7 +77,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-#  큐 & 덱
+#  05 회차 - 큐 & 덱
 
 | 번호                                             | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
 | ------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
@@ -87,7 +91,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-# 우선순위 큐
+# 08 회차 - 우선순위 큐
 
 | 번호                                                         | 설명                         | 해결방법 | 제출번호                                                  |
 | ------------------------------------------------------------ | ---------------------------- | -------- | --------------------------------------------------------- |
@@ -97,7 +101,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-# BFS&DFS
+# 06 회차 - BFS&DFS
 
 + 최단 경로 / 최저비용에는 BFS 구현
 
@@ -125,7 +129,7 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-# 트리
+# 07 회차 - 트리
 
 | 번호                                                         | 설명                                        | 해결방법                                                     | 제출번호                                                     |
 | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -135,11 +139,11 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[1967번](https://www.acmicpc.net/problem/1967)** | 트리 지름 구하기                            | dfs 재귀구현<br />후위탐색 재귀구현<br />후위탐색 재귀구현<br />sys.setrecursionlimit(10**9) | [41039735](https://www.acmicpc.net/submit/1967/41039735) 시간초과<br />[41041676](https://www.acmicpc.net/submit/1967/41041676) 재귀초과<br />[41042182](https://www.acmicpc.net/submit/1967/41042182) 재귀초과(위의 것 post인자 1개로 한 것)<br />[41043495](https://www.acmicpc.net/submit/1967/41043495) value error |
 | ***<img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" alt="img" style="width:20px;" />[2263번](https://www.acmicpc.net/problem/2263)*** | 이진트리 중,후위순회로 전위순회 찾기        | sys.setrecursionlimit(10**9)<br />in_order에서 특정 값의 index 가져오기 위해, list 하나 만들고 시작하기(left,right만들어서 함)<br />left, right  안만들고, 바로 index로 계산(41101739) | [41045481][https://www.acmicpc.net/submit/2263/41045481] 시간초과<br />[41101636](https://www.acmicpc.net/submit/2263/41101636)<br />[41101739](https://www.acmicpc.net/submit/2263/41101739)<br />[41233770](https://www.acmicpc.net/submit/2263/41233770) : 이거보기 |
 | *** <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />[5639번](https://www.acmicpc.net/problem/5639)*** | 이진검색트리에서 전위순회를 후위순회로 변환 | 이진검색트리는 좌측노드의 값이 우측노드의 값보다 작으므로,  전위순회의 첫 원소가 root, root 보다 작은 첫 값이 왼쪽 노드, root보다 큰 첫 값이 오른쪽 노드 | [41122756](https://www.acmicpc.net/submit/5639/41122756)     |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" /> **[4803번](https://www.acmicpc.net/problem/4803)** | 그래프에서 트리 개수 찾기                   | visited를 잘 하는 것이 핵심                                  |                                                              |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" /> **[4803번](https://www.acmicpc.net/problem/4803)** | 그래프에서 트리 개수 찾기                   | visited를 잘 하는 것이 핵심(dfs 풀이시)<br />**서로소 집합**으로 해결! | [42363368](https://www.acmicpc.net/submit/4803/42363368)     |
 
 
 
-# 백트래킹
+# 09 회차 - 백트래킹
 
 | 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -147,6 +151,83 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" /> [9663번](https://www.acmicpc.net/problem/9663) N-Queen | 퀸들의 이동 경로가 서로 겹치지 않게, 놓을 수 있는 경우의 수 구하기 | 대각선의 합과 차가 일정하다는 것을 이용<br />**전형적인 dfs(트리)문제**로 풀이 | [41746933](https://www.acmicpc.net/submit/9663/41746933)<br />[41747223](https://www.acmicpc.net/submit/9663/41747223) 시간초과 |
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[14888번](https://www.acmicpc.net/problem/14888)** 연산자끼워넣기 | 숫자와 연산자 4가지가 주어지면, 값이 최대/최소가 되도록 숫자와 연산자를 배치하기 | 4가지 경우 DFS의 if 문으로 진행(빠른편인듯)                  | [41735161](https://www.acmicpc.net/submit/14888/41735161)    |
 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" /> **[14889번](https://www.acmicpc.net/problem/14889)**  스타트와 링크 | 전체를 절반으로 두팀으로 나눠서, 두 팀의 시너지의 차이가 가장 적게하는 방법 | **전형적인 dfs (tree)문제**로 **외우기**<br />종료조건, (재귀)포함시키는경우, (재귀)포함안시키는경우 | [41745415](https://www.acmicpc.net/submit/14889/41745415)    |
+
+
+
+
+
+# 10 회차 - 그리디
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[11047번](https://www.acmicpc.net/problem/11047)  거스름돈 | 문제 조건이 그리디 가능함(다음 단위 돈이 이전 돈의 배수)     | 그리디<br />dfs(완전탐색)                                    | [41923375](https://www.acmicpc.net/submit/11047/41923375)<br />[41933621](https://www.acmicpc.net/submit/11047/41933621) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />**[1931번](https://www.acmicpc.net/problem/1931)  회의실배정** |                                                              | 안되는 것들 전체 일정에서 삭제하는 것보다, index 접근이 빠름<br />좀 더 깔끔한 loop로 해보기(주현님참고) | [41929360](https://www.acmicpc.net/submit/1931/41929360)     |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[11399번 ](https://www.acmicpc.net/problem/11399) ATM |                                                              |                                                              | [41930168](https://www.acmicpc.net/submit/11399/41930168)    |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[1541번](https://www.acmicpc.net/problem/1541) 잃어버린 괄호 | 양수, +, - 연산이 str 한 문장으로 주어질 때, 괄호를 쳐서 가장 작게 값 나오도록 하기 (55-50+40 와 같음) | 앞에서부터 보면서, - 가 한번이라도 나오면, 그 뒤는 모두 음수로 만들 수 있음 | [41930999](https://www.acmicpc.net/submit/1541/41930999)     |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" alt="img" style="width:20px;" />**[13305번 ](https://www.acmicpc.net/problem/13305)주유소** | 직선도로에서, 각 위치에서의 기름값과 위치간의 거리가 주어질 때, 최소 비용으로 목적지까지 이용하기 | 현재위치보다 기름값이 싼 곳이 나올 때까지 움직이면 됨 / index 처리가 조금 헷갈림<br />좀 더 깔끔한 loop로 해보기 (주현님참고) | [41931913](https://www.acmicpc.net/submit/13305/41931913)    |
+
+
+
+
+
+# 11회차 - 아기상어 + 최소신장트리
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[17086번](https://www.acmicpc.net/problem/17086) 아기상어 | 0,1로 이루어진 2차원 배열주어지면, 1인 곳에서 8방으로 뻗어나갈 때, 언제 0을 다 전염시키는지와 같은 문제 | ***[7576번](https://www.acmicpc.net/problem/7576)*** 문제참고 | [42068859](https://www.acmicpc.net/submit/17086/42068859)    |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[9372번](https://www.acmicpc.net/problem/9372) 상근이의 여행 | 가중치 없는 연결 그래프에서, 최소신장트리의 길이는, node 개수 -1 |                                                              | [42069304](https://www.acmicpc.net/submit/9372/42069304)     |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[1197번](https://www.acmicpc.net/problem/1197)** | 최소신장트리찾기                                             | prim은 시간초과되고, kruscal은 ok                            | [42139683](https://www.acmicpc.net/submit/1197/42139683) prim(arr) 시간초과<br />[42139960](https://www.acmicpc.net/submit/1197/42139960) prim(arrL) 시간초과<br />[42140779](https://www.acmicpc.net/submit/1197/42140779) Kruscal |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[4386번](https://www.acmicpc.net/problem/4386)** | 2차원 좌표주어질 때, 최소신장트리찾기                        | prim으로 해결                                                | [42141573](https://www.acmicpc.net/submit/4386/42141573)     |
+
+
+
+
+
+# 12 회차 - 아기상어 & class3+
+
+
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[16236번 ](https://www.acmicpc.net/problem/16236)아기상어** | 자신 크기 이하의 물고기 통과 가능, 자신 크기 미만 물고기 먹기 가능, 자신의 크기 만큼 물고기 먹으면, 자신의 크기 +1일 때,<br />물고기를 최대한 먹을 때까지 걸리는 시간 | bfs 만들어서, 먹을 수 있는 후보군 만들어서, 이를 규칙에 맞게 정렬해서, 먹고, 다시 물고기 탐색 반복 | [42360091](https://www.acmicpc.net/submit/16236/42360091) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[1463번](https://www.acmicpc.net/problem/1463) 1로 만들기 | 자연수를 //3  or //2 or -1 해서 1로 만드는 최소 횟수<br />주현님 풀이 **BFS & DP** 로 해보기 | dfs & 백트래킹                                               | [42184824](https://www.acmicpc.net/submit/1463/42184824)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[1003번](https://www.acmicpc.net/problem/1003)  피보나치수 | 재귀호출시 fibo(0), fibo(1) 몇번 호출되는지                  | 재귀구현은 시간초과<br />DP구현은 통과                       | [42269962](https://www.acmicpc.net/submit/1003/42269962)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="WIDTH:20PX;" />[9095번](https://www.acmicpc.net/problem/9095) 1,2,3 더하기 | 정수 n을 1,2,3 을 이용한 합으로 나타내는 방법의 수           | dfs                                                          | [42270546](https://www.acmicpc.net/submit/9095/42270546)  |
+
+
+
+# 13 회차 - class3+
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[11726번](https://www.acmicpc.net/problem/11726)   2xn 타일링 | \|, = 모양 타일로 2xn 타일채우기                             | 피보나치 & DP                                                | [42319435](https://www.acmicpc.net/submit/11726/42319435) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />**[2579번](https://www.acmicpc.net/problem/2579)**계단 오르기 | 1 칸 또는 2칸씩 계단 오르는데, 연속한 3칸을 오를 수는 없음. <br />각 계단마다 점수 있는데, 목적지 도착시 최대 점수값구하기 | DP<br />dfs는 시간초과<br />**현아님풀이대로 dp더 간단히 해보기** | [42337724](https://www.acmicpc.net/submit/2579/42337724)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[9461번](https://www.acmicpc.net/problem/9461) 파도반 수열 | 나선형으로 삼각형 배열했을 때, 마지막에 놓는 삼각형의 한 변의 길이 찾기 | 규칙찾아서하기.<br />신기한 것은 점화식이 2개임.<br />N = N- 1 + N-5<br /> = N -2 + N -3 | [42338392](https://www.acmicpc.net/submit/9461/42338392)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[10026번](https://www.acmicpc.net/problem/10026)** 적록색약 | R,G,B로 이루어진 2차원배열에서 뭉쳐진 R,G,B 그룹개수 찾기    | **2차원 서로소 집합** 이용<br />**현아님 BFS, 소연님 R을 G로 바꾸기, 주현님 DFS** | [42341639](https://www.acmicpc.net/submit/10026/42341639) |
+
+
+
+# 14회차 - class3+
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[1992번 ](https://www.acmicpc.net/problem/1992)**쿼드트리 | 2차원 0,1 배열 압축하기                                      | dfs로 해결<br />**매 순간 압축해주는 방식 : 현아님 풀이** 보기<br />**소연님 dfs 보기** | [42583356](https://www.acmicpc.net/submit/1992/42583356)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[11403번 ](https://www.acmicpc.net/problem/11403)**경로찾기 | 2차원으로 연결관계가 표현되는 유향그래프에서, i에서 j로 갈 수 있는 경우 모두 찾기 | stack을 이용한 dfs 이용 / for-else 방식의 stack으로 dfs 구현하면, **stack에 있는 node들은 모두 순서대로 이어진 경로**이므로, 이를 이용 & **cycle 부분 처리를 따로** 해줘야 함 | [42581327](https://www.acmicpc.net/submit/11403/42581327) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[14500번](https://www.acmicpc.net/problem/14500)**테르트미노 | 테트리스 4가지 모양 중 1개 이용해서 2차원 배열 덮을 때, 덮인 부분 값의 합이 최대가 되도록 | 생각해보면, 이어진 4개의 블록의 모든 경우의 수와 동일함 그래서 모든 경우의 수 더해서 해결<br />**bfs, dfs로도 해보기** (dfs경우 ㅗ 모양따로 해줘야함)<br />**소연님 풀이 ㅗ 구하는 것 알기 hhhh함수** | [42577319](https://www.acmicpc.net/submit/14500/42577319) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" alt="img" style="width:20px;" />[1764번](https://www.acmicpc.net/problem/1764)  듣보잡 |                                                              | set1.intersection(set2) 이용                                 | [42537995](https://www.acmicpc.net/submit/1764/42537995)  |
+
+
+
+# 15회차 - class 3+ /  분할정복
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[1074번](https://www.acmicpc.net/problem/1074)** Z | 이차원 배열을 4등분 하며 z자 형태로 순회할 때, (r,c)는 몇 번째로 순회하는가? | index를 이용해서 4곳 중 어느 위치인지 파악                   | [42757362](https://www.acmicpc.net/submit/1074/42757362) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[1780번](https://www.acmicpc.net/problem/1780) 종이의 개수 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[2630번](https://www.acmicpc.net/problem/2630) 색종이 만들기의 확장버전 / 3x3으로 9등분함 | **index**로만 조작하는 함수 만들어서 다시 해보기<br />**현아님** 풀이처럼 루프로 한번에 처리 | [42755167](https://www.acmicpc.net/submit/1780/42755167) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[2630번](https://www.acmicpc.net/problem/2630) 색종이 만들기 | <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[1992번 ](https://www.acmicpc.net/problem/1992)**쿼드트리 의 쉬운 버전 문제로, 2차원 배열을 4등분 해가는 문제 | 2차원 배열이 모두 같은지 판단하는 same 함수와, 모두 같지 않다면 4등분하는 divide 함수를 생성<br />**소연님** 풀이 처럼 1992 활용하기 | [42749038](https://www.acmicpc.net/submit/2630/42749038) |
+|                                                              |                                                              |                                                              |                                                          |
+|                                                              |                                                              |                                                              |                                                          |
+|                                                              |                                                              |                                                              |                                                          |
 
 
 
