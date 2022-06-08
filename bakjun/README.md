@@ -286,6 +286,62 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
+# 0530_18회차 - class3++
+
+
+
+
+
+| 번호                                                         | 설명                                                         | 해결방법                                                   | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[5430번](https://www.acmicpc.net/problem/5430) AC** | 숫자가든 list 주어지고, R연산의 경우 list 뒤집기, D연산의 경우 맨앞 숫자 pop => 마지막에 남은 list 구하기 | 왜 틀리는지 모르겠음. <br />print 형식 join으로 맞춰줘야함 | [43971806](https://www.acmicpc.net/submit/5430/43971806)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" alt="img" style="width:20px;" />**[11723번 ](https://www.acmicpc.net/problem/11723)집합** | 집합 연산하는 문제                                           | 메모리 초과/시간초과 문제를 잡아야 함                      |                                                           |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[11724번](https://www.acmicpc.net/problem/11724) 연결 요소 개수 | 그래프에서 연결된 덩어리 몇개인지                            | 서로소 집합 이용                                           | [43930294](https://www.acmicpc.net/submit/11724/43930294) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[11659번](https://www.acmicpc.net/problem/11659) 구간 합 구하기 4 |                                                              | 부분합 이용해서 빠르게 구하기                              | [43929670](https://www.acmicpc.net/submit/11659/43929670) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[11727번 ](https://www.acmicpc.net/problem/11727)2xn 타일링 2 |                                                              | dp 이용                                                    | [43930006](https://www.acmicpc.net/submit/11727/43930006) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" alt="img" style="width:20px;" />[1676번](https://www.acmicpc.net/problem/1676) 팩토리얼의 0개수 | 팩토리얼의 0 개수 구하는 문제                                | 5가 몇개 있는지 세면 됨                                    | [43963485](https://www.acmicpc.net/submit/1676/43963485)  |
+
+
+
+
+
+
+
+
+
+# 0602_19회차 - class4
+
+
+
+| 번호                                                         | 설명                                  | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />[1149번](https://www.acmicpc.net/problem/1149) RGB 거리 | 최소비용구하기                        | dfs는 시간초과 / dp이용하기                                  | [44050188](https://www.acmicpc.net/submit/1149/44050188)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" /> **[11053번](https://www.acmicpc.net/problem/11053) 가장 긴 증가하는 부분 수열** |                                       | dp 이용 / 앞 쪽 수열 중, 자신보다 작은 수 중에서, 최대길이 부분수열(dp의 값) 찾아서 +1 해주면 됨 (주현님 풀이 더 깔끔) | [44087820](https://www.acmicpc.net/submit/11053/44087820) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" /> [1932번 ](https://www.acmicpc.net/problem/1932)정수 삼각형 | 삼각형 따라 내려가면서, 최대합 구하기 | dfs는 시간초과 / dp 이용하기                                 | [44087313](https://www.acmicpc.net/submit/1932/44087313)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" alt="img" style="width:20px;" />**[12015번](https://www.acmicpc.net/problem/12015) 가장 긴 증가하는 부분수열2** |                                       | [참고1](https://rebro.kr/33) / [참고2](https://loosie.tistory.com/376) <br />요지는 각 길이의 부분수열에서 맨 끝값을 저장해 놓는데, 최소값으로 계속 갱신하는 것임 |                                                           |
+
+ 
+
+# 0609_20회차 - class4
+
+
+
+| 번호                                                         | 설명                                                         | 해결방법       | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[14502번 ](https://www.acmicpc.net/problem/14502)연구소** | 2차원배열에 벽 세워서, 감염막기                              | 완전탐색 & bfs | [44226784](https://www.acmicpc.net/submit/14502/44226784) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />**[15652번](https://www.acmicpc.net/problem/15652) N과 M(4)** | 비감소중복수열모두구하기                                     | 재귀함수이용   | [44150977](https://www.acmicpc.net/submit/15652/44150977) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[1753번](https://www.acmicpc.net/problem/1753) 최단경로 |                                                              |                |                                                           |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />[12865번 ](https://www.acmicpc.net/problem/12865) 평범한 배낭 |                                                              |                |                                                           |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[9465번 ](https://www.acmicpc.net/problem/9465)스티커** | 2xN 배열에서 1개 선택하면 상하좌우 선택못할 때, 점수 최대가 되도록 선택 | DP             | [44293345](https://www.acmicpc.net/submit/9465/44293345)  |
+
+ 
+
+
+
+
+
+
+
 
 
 # 참고
