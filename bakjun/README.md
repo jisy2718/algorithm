@@ -326,15 +326,38 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-| 번호                                                         | 설명                                                         | 해결방법       | 제출번호                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | --------------------------------------------------------- |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[14502번 ](https://www.acmicpc.net/problem/14502)연구소** | 2차원배열에 벽 세워서, 감염막기                              | 완전탐색 & bfs | [44226784](https://www.acmicpc.net/submit/14502/44226784) |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />**[15652번](https://www.acmicpc.net/problem/15652) N과 M(4)** | 비감소중복수열모두구하기                                     | 재귀함수이용   | [44150977](https://www.acmicpc.net/submit/15652/44150977) |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[1753번](https://www.acmicpc.net/problem/1753) 최단경로 |                                                              |                |                                                           |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />[12865번 ](https://www.acmicpc.net/problem/12865) 평범한 배낭 |                                                              |                |                                                           |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[9465번 ](https://www.acmicpc.net/problem/9465)스티커** | 2xN 배열에서 1개 선택하면 상하좌우 선택못할 때, 점수 최대가 되도록 선택 | DP             | [44293345](https://www.acmicpc.net/submit/9465/44293345)  |
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[14502번 ](https://www.acmicpc.net/problem/14502)연구소** | 2차원배열에 벽 세워서, 감염막기                              | 완전탐색 & bfs                                               | [44357905](https://www.acmicpc.net/submit/14502/44357905) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />**[15652번](https://www.acmicpc.net/problem/15652) N과 M(4)** | N개 원소로 M길이의 비감소중복수열 모두 구하기                | 재귀함수이용                                                 | [44358548](https://www.acmicpc.net/submit/15652/44358548) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[1753번](https://www.acmicpc.net/problem/1753) 최단경로 | 방향그래프의 시작점에서 다른 모든 점까지의 최단거리 구하는 문제 | 다익스트라(조건문을 최적화하기)/<br />주현님 힙이용한 풀이 보기 | [44357735](https://www.acmicpc.net/submit/1753/44357735)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[12865번 ](https://www.acmicpc.net/problem/12865) 평범한 배낭** | 가져갈 수 있는 무게 총량이 정해져있고, 각 item의 무게와 가치가 정해져있을 때, 최대한의 가치를 배낭에 싸기 | [참고](https://myjamong.tistory.com/319) / Knapsack 알고리즘<br />각 item 1개 씩 들어올 때마다, 여태까지 들어온 item들 가지고 만든 최선의 가방 만들기(큰 무게부터 다 update 해줘야 함) | [44330272](https://www.acmicpc.net/submit/12865/44330272) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[9465번 ](https://www.acmicpc.net/problem/9465)스티커** | 2xN 배열에서 1개 선택하면 상하좌우 선택못할 때, 점수 최대가 되도록 선택 | DP / DP중에 과거 2개것만 가지고 진행해도 됨                  | [44293345](https://www.acmicpc.net/submit/9465/44293345)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[9251번](https://www.acmicpc.net/problem/9251) LCS** | 문자열 최대 공통 부분 수열                                   | [참고](https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-LCS-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Longest-Common-Substring%EC%99%80-Longest-Common-Subsequence) DP/ 현아님 풀이 보기(기준잡아서 하는 방법) | [44323156](https://www.acmicpc.net/submit/9251/44323156)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[15686번 ](https://www.acmicpc.net/problem/15686)치킨배달** | NxN에 집과 치킨집이 있음. 집에서 가장 가까운 치킨집까지의 거리의 합이 최소가 되도록 M개 치킨집 선택 | 완전탐색 / 다른방법 있나 찾아보기/ **combinations(list,r)** : list에서 r개 골라줌 | [44330937](https://www.acmicpc.net/submit/15686/44330937) |
 
  
+
+
+
+# 0613_21회차 - class4
+
+
+
+| 번호                                                         | 설명                                   | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[11054번](https://www.acmicpc.net/problem/11054) 가장 긴 바이토닉 수열** | 순증가하다 순감소하는 최대 부분수열    | 앞에서부터 증가하는 부분수열 만들고, 뒤에서부터 증가하는 부분수열 만들어서, 두 개 각 자리에서 더하면 됨 | [44397816](https://www.acmicpc.net/submit/11054/44397816) |
+|                                                              |                                        |                                                              |                                                           |
+|                                                              |                                        |                                                              |                                                           |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[15654번](https://www.acmicpc.net/problem/15654) N과M(4) | 사전 순으로 N개 중, M개 모든 조합 출력 | 재귀이용, used set 이용                                      | [44396126](https://www.acmicpc.net/submit/15654/44396126) |
+
+
+
+
+
+
+
+
 
 
 
