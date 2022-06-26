@@ -344,12 +344,12 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
-| 번호                                                         | 설명                                   | 해결방법                                                     | 제출번호                                                  |
-| ------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[11054번](https://www.acmicpc.net/problem/11054) 가장 긴 바이토닉 수열** | 순증가하다 순감소하는 최대 부분수열    | 앞에서부터 증가하는 부분수열 만들고, 뒤에서부터 증가하는 부분수열 만들어서, 두 개 각 자리에서 더하면 됨 | [44397816](https://www.acmicpc.net/submit/11054/44397816) |
-|                                                              |                                        |                                                              |                                                           |
-|                                                              |                                        |                                                              |                                                           |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[15654번](https://www.acmicpc.net/problem/15654) N과M(4) | 사전 순으로 N개 중, M개 모든 조합 출력 | 재귀이용, used set 이용                                      | [44396126](https://www.acmicpc.net/submit/15654/44396126) |
+| 번호                                                         | 설명                                               | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[11054번](https://www.acmicpc.net/problem/11054) 가장 긴 바이토닉 수열** | 순증가하다 순감소하는 최대 부분수열                | 앞에서부터 증가하는 부분수열 만들고, 뒤에서부터 증가하는 부분수열 만들어서, 두 개 각 자리에서 더하면 됨 | [44397816](https://www.acmicpc.net/submit/11054/44397816) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />**[1629번](https://www.acmicpc.net/problem/1629) 곱셈** | 많은 횟수의 거듭제곱한 값을 c로 나눈 나머지 구하기 | **분할정복**으로 재귀함수 호출하여, 곱셈의 횟수를 $O(n)$에서 $O(\log_2n)$ 으로 줄이기!<br />$3^{128} = (3^{64})^2 = ((3^{32})^2)^2 = \cdots  $ | [44488188](https://www.acmicpc.net/submit/1629/44488188)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[11404번](https://www.acmicpc.net/problem/11404) | 방향 그래프의 노드에서 다른 노드까지의 최소거리    | 다익스트라 함수 만들어서 해결<br />**소연님 heapq 이용한 다익스트라** | [44428818](https://www.acmicpc.net/submit/11404/44428818) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="width:20px;" />[15654번](https://www.acmicpc.net/problem/15654) N과M(4) | 사전 순으로 N개 중, M개 모든 조합 출력             | 재귀이용, used set 이용                                      | [44396126](https://www.acmicpc.net/submit/15654/44396126) |
 
 
 
@@ -359,7 +359,39 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 
 
+# 0616_22회차 - class4
 
+
+
+| 번호                                                         | 설명                     | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[1916번](https://www.acmicpc.net/problem/1916)** | 다익스트라               | heap을 이용한 다익스트라 & 목표지점 찾으면 바로 순회 끝내야<br />**heap 이용해서 스스로 구현해보기** | [44623941](https://www.acmicpc.net/submit/1916/44623941)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />[1238번](https://www.acmicpc.net/problem/1238) | 다익스트라               | **heap 이용해서 구현(스스로구현해보기)**                     | [44624120](https://www.acmicpc.net/submit/1238/44624120)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" alt="img" style="WIDTH:20PX;" />[15657번](https://www.acmicpc.net/problem/15657) N과M (8) | N개 중 M개 선택 중복수열 | 재귀호출로 진행                                              | [44518904](https://www.acmicpc.net/submit/15657/44518904) |
+
+
+
+
+
+# 0623_24회차 - class4
+
+| 번호                                                         | 설명                                                         | 해결방법                                                   | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[2448번](https://www.acmicpc.net/problem/2448)** 별찍기 | 규칙에 맞춰 별찍기                                           | 반복되는 것들을 새로운 원소로 넣어주고, 기존의 것 업데이트 | [44913991](https://www.acmicpc.net/submit/2448/44913991)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[15663번](https://www.acmicpc.net/problem/15663) N과M (9) | 중복되는 숫자 포함해서 숫자 N개 주어질 때, M길이의 수열을 중복되지 않게 오름차순으로 출력 | 재귀함수에 idx와 used 같이 넣어주기.                       | [44907887](https://www.acmicpc.net/submit/15663/44907887) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" alt="img" style="width:20px;" />**[1918번](https://www.acmicpc.net/problem/1918) 후위표기식** |                                                              |                                                            |                                                           |
+
+
+
+
+
+# 0627_25회차 - class4 (메모리사용줄이기)
+
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" alt="img" style="width:20px;" />**[2096번 ](https://www.acmicpc.net/problem/2096)내려가기** | Nx3 행렬에서, 아래로 내려가면서 숫자 더할 때, 최대합과 최소합 구하기 | 메모리 사용을 최소화하기 위해서, 각 input 받을 때마다, dp를 업데이트하고, 이전 자료는 버림 | [45024201](https://www.acmicpc.net/submit/2096/45024201)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[16953번 ](https://www.acmicpc.net/problem/16953) A to B | A에서 B를 만들 수 있는 최소연산횟수                          | dictionary visited(메모리 사용 적음)를 이용한 bfs이용        | [45023469](https://www.acmicpc.net/submit/16953/45023469) |
+|                                                              |                                                              |                                                              |                                                           |
 
 
 

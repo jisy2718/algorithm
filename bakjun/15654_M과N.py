@@ -13,6 +13,7 @@ def dfs(idx,used):
 
     # 앞자리부터 숫자를 택하는데, 가장 작은 숫자부터 loop 돌면서, 이전에 안 쓴거면 사용하기!
     # 그렇게 하면, 사전순으로 모든 조합 가능!
+    # arr = [1,7,8,9]
     for i in range(N):
         if arr[i] not in used:
             perm[idx] = arr[i]
