@@ -416,12 +416,12 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 # 0630_26회차 - class4 
 
-| 번호 | 설명 | 해결방법 | 제출번호 |
-| ---- | ---- | -------- | -------- |
-|      |      |          |          |
-|      |      |          |          |
-|      |      |          |          |
-|      |      |          |          |
+| 번호                                                         | 설명 | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | --------------------------------------------------------- |
+|                                                              |      |                                                              |                                                           |
+|                                                              |      |                                                              |                                                           |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[14938번](https://www.acmicpc.net/problem/14938) 서강그라운드 |      | 모든 노드에 대해서, 다익스트라 돌기<br />**heap(힙)으로 다익스트라(dijkstra)** 구현 | [45612032](https://www.acmicpc.net/submit/14938/45612032) |
+|                                                              |      |                                                              |                                                           |
 
 
 
@@ -429,12 +429,38 @@ mid = len(a) // 2  : len(a)가 짝수면, i < mid 로 하면 딱 절반 indexing
 
 # 0704_27회차 - class4
 
-| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
-| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[1043번](https://www.acmicpc.net/problem/1043)** 거짓말 | 여러개의 파티가 주어지고, 각 파티에는 1명이상의 사람들이 중복가능하게 참여 가능함. 이 때 나는 모든 파티에 참여하는데, 각 파티에서 거짓말을 안들키고 할 것임. 그런데 진실을 아는 사람들도 있음. 진실을 아는 사람들을 모두 피해서, 거짓말을 할 수 있는 파티의 최대 개수 구하면 됨 | 우선 하나의 파티에서 만나는 사람들은 모두 연결되어 있는 그래프로 볼 수 있으므로, 그래프를 만들고, 서로소 집합을 이용해서, union 해주고, 진실을 아는 사람들의 root를 찾아서 해결. | [45413244](https://www.acmicpc.net/submit/1043/45413244) |
-|                                                              |                                                              |                                                              |                                                          |
-|                                                              |                                                              |                                                              |                                                          |
-|                                                              |                                                              |                                                              |                                                          |
+| 번호                                                         | 설명                                                         | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[1043번](https://www.acmicpc.net/problem/1043)** 거짓말 | 여러개의 파티가 주어지고, 각 파티에는 1명이상의 사람들이 중복가능하게 참여 가능함. 이 때 나는 모든 파티에 참여하는데, 각 파티에서 거짓말을 안들키고 할 것임. 그런데 진실을 아는 사람들도 있음. 진실을 아는 사람들을 모두 피해서, 거짓말을 할 수 있는 파티의 최대 개수 구하면 됨 | 우선 하나의 파티에서 만나는 사람들은 모두 연결되어 있는 그래프로 볼 수 있으므로, 그래프를 만들고, 서로소 집합을 이용해서, union 해주고, 진실을 아는 사람들의 root를 찾아서 해결.<br />**진실을 아는 사람을 q로 넣어서 풀어도 된다.** | [45413244](https://www.acmicpc.net/submit/1043/45413244)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />[2638번](https://www.acmicpc.net/problem/2638) 치즈 | 치즈(1) 과 공기(0)으로 이루어진 2차원 배열이 주어질 때, 치즈는 공기와 2면에서 접하면 사라진다. 단, 치즈 내부의 공기도 있는데, 외부의 공기와 만나기 전까지는 영향을 끼치지 않는다. 얼마의 시간 후에 치즈가 모두 없어지는가? | 외부공기를 업데이트하고, 치즈를 제거하는 것을 반복           | [45464429](https://www.acmicpc.net/submit/2638/45464429)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[12851번](https://www.acmicpc.net/problem/12851) 숨바꼭질2 | N에서 시작해서 M에 도착하는 최단 시간과, 경우의 수 구하는 문제. | 최단 시간 먼저 구한 후, 백트래킹 이용해서, 경우의 수 구하면 됨. <br />**그냥 bfs 한번에 풀어도 됨..** | [45498389](https://www.acmicpc.net/submit/12851/45498389) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[11779번](https://www.acmicpc.net/problem/11779)** |                                                              | 다익스트라                                                   |                                                           |
+
+
+
+
+
+# 0707_28회차 - class4
+
+| 번호                                                         | 설명                                             | 해결방법                                                     | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" alt="img" style="width:20px;" />**[1865번 ](https://www.acmicpc.net/problem/1865)**웜홀 | 음의 가중치가 허용될 때, 음의 순환고리가 있는지? | 벨만-포드(bellman-ford) 이용!<br />시작노드 상관없이 전체 경로에 대해서, 총 노드의 개수만큼 반복하면 됨. 음의 순환고리만 찾으면 됨. | [45680551](https://www.acmicpc.net/submit/1865/45680551)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />[13172번](https://www.acmicpc.net/problem/13172) |                                                  | 문제가 요구하는 것이 명확하게 잘 설명되어 있지 않아서 많이 헤맴. <br />[1629번](https://www.acmicpc.net/problem/1629) 처럼 **거듭제곱** 빠르게 하는 함수가 핵심 | [45681979](https://www.acmicpc.net/submit/13172/45681979) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="img" style="width:20px;" />**[14938번](https://www.acmicpc.net/problem/14938)** 서강그라운드 |                                                  | 힙을 이용한 다익스트라                                       | [45612032](https://www.acmicpc.net/submit/14938/45612032) |
+|                                                              |                                                  |                                                              |                                                           |
+
+
+
+
+
+# 0719_31회차
+
+| 번호                                                         | 설명                                                         | 해결방법                 | 제출번호                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------ | --------------------------------------------------------- |
+| **<img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[1912번 ](https://www.acmicpc.net/problem/1912)연속합** | 음수와 양수로 이루어진 수열의 연속합 최대값                  | DP                       | [46314262](https://www.acmicpc.net/submit/1912/46314262)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" alt="img" style="width:20px;" />[4948번](https://www.acmicpc.net/problem/4948) 베르트랑 공준 | n과 2n 사이의 소수 개수 구하기                               | sqrt(n)까지만 보면 된다. | [46315168](https://www.acmicpc.net/submit/4948/46315168)  |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />[11057번](https://www.acmicpc.net/problem/11057) 오르막수 | N자리 수 중, 뒷자리수가 앞자리수보다 같거나 큰 수의 개수 구하기 | DP                       | [46318101](https://www.acmicpc.net/submit/11057/46318101) |
+| <img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" alt="img" style="width:20px;" />[2583번](https://www.acmicpc.net/problem/2583) 영역구하기 |                                                              | BFS                      | [46320891](https://www.acmicpc.net/submit/2583/46320891)  |
 
 
 
